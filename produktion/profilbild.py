@@ -25,5 +25,5 @@ for _ in range(90):
     x, y, l = r.randint(0, S), r.randint(0, S), r.randint(40, 100)
     d.line((x, y, x - l * .16, y + l), fill=(170, 205, 255, r.randint(30, 90)), width=2)
 img = ImageChops.multiply(img, vignette(.7, S, S))
-put(img, ts_box("23:47", True, 120), 540, 905)
+put(img, pill("23:47", 120, (8, 10, 16), YEL, "mono", 22, 8, r=8), 540, 905)
 img.save(sys.argv[1])
