@@ -5,9 +5,25 @@
     "schauplatz": "Ravensbruck, fiktive Kleinstadt",
     "stil": {
       "look": "2D-Cartoon, flache Formen mit dunkler Kontur, Mystery-Serie, leicht düster",
-      "palette": {"nachtblau": "#050A1A – #1E3862", "laternengelb": "#FFC93C / #FFBE5A", "akzent_b": "#5FD0FF", "stempelrot": "#D6222C", "kontur": "#080B14"},
-      "wiederkehrende_elemente": ["Regen", "gelbliche Straßenlaternen", "Kirchturmuhr auf 23:47", "Überwachungskamera-Look (entsättigt, Zeilen, Rauschen)", "gelbe Zeitstempel-Boxen"],
-      "schriften": {"titel": "Anton", "untertitel": "Montserrat ExtraBold", "kamera_hud": "Share Tech Mono"},
+      "palette": {
+        "nachtblau": "#050A1A – #1E3862",
+        "laternengelb": "#FFC93C / #FFBE5A",
+        "akzent_b": "#5FD0FF",
+        "stempelrot": "#D6222C",
+        "kontur": "#080B14"
+      },
+      "wiederkehrende_elemente": [
+        "Regen",
+        "gelbliche Straßenlaternen",
+        "Kirchturmuhr auf 23:47",
+        "Überwachungskamera-Look (entsättigt, Zeilen, Rauschen)",
+        "gelbe Zeitstempel-Boxen"
+      ],
+      "schriften": {
+        "titel": "Anton",
+        "untertitel": "Montserrat ExtraBold",
+        "kamera_hud": "Share Tech Mono"
+      },
       "untertitel": "weiß mit schwarzer Kontur, aktives Wort gelb, Position ca. y=1420",
       "technische_referenz": "produktion/engine.py (OUTFITS, draw_figure, draw_daniel_bust, draw_back) ist die verbindliche Zeichenvorlage"
     }
@@ -30,12 +46,23 @@
     "kommissarin_lena_hartmann": {
       "rolle": "Ermittlerin",
       "hinweis": "Name ist ein Arbeitsname – wurde im Sprechertext bisher nicht genannt und kann geändert werden",
-      "aussehen": {"haare": "rotbraun (#96422A), Pferdeschwanz", "kleidung": "beiger Trenchcoat (#BA986A) mit Gürtel, dunkles Oberteil, dunkle Hose", "haut": "#F0C6AA"}
+      "aussehen": {
+        "haare": "rotbraun (#96422A), Pferdeschwanz",
+        "kleidung": "beiger Trenchcoat (#BA986A) mit Gürtel, dunkles Oberteil, dunkle Hose",
+        "haut": "#F0C6AA"
+      }
     },
     "kommissar_jonas_brandt": {
       "rolle": "Ermittler",
       "hinweis": "Name ist ein Arbeitsname – wurde im Sprechertext bisher nicht genannt und kann geändert werden",
-      "aussehen": {"haare": "kurz, schwarz", "bart": "dunkler Vollbart", "kleidung": "dunkelgrauer Mantel (#3C4250), helles Hemd, dunkle Hose", "requisit": "Taschenlampe", "haut": "#D6A27A", "statur": "etwas größer als Hartmann"}
+      "aussehen": {
+        "haare": "kurz, schwarz",
+        "bart": "dunkler Vollbart",
+        "kleidung": "dunkelgrauer Mantel (#3C4250), helles Hemd, dunkle Hose",
+        "requisit": "Taschenlampe",
+        "haut": "#D6A27A",
+        "statur": "etwas größer als Hartmann"
+      }
     }
   },
   "orte": {
@@ -49,7 +76,12 @@
     {
       "nummer": 1,
       "titel": "Der Mann, der zweimal existierte",
-      "dateien": {"video": "Kriminalfall_Folge_01.mp4", "cover": "Kriminalfall_Folge_01_Cover.png", "sprechertext": "folge_01_elevenlabs.txt", "sprecher_audio": "audio/folge_01_sprecher.mp3"},
+      "dateien": {
+        "video": "Kriminalfall_Folge_01.mp4",
+        "cover": "Kriminalfall_Folge_01_Cover.png",
+        "sprechertext": "folge_01_elevenlabs.txt",
+        "sprecher_audio": "audio/folge_01_sprecher.mp3"
+      },
       "dauer_sekunden": 61.65,
       "ereignisse": [
         "Gestern Nacht, 23:47 Uhr: Daniel Weber (29) verschwindet spurlos aus seiner Wohnung in Ravensbruck.",
@@ -61,7 +93,35 @@
       ],
       "abstimmung": {
         "frage": "Was sollen wir zuerst untersuchen?",
-        "optionen": {"A": "Überwachungskameras untersuchen", "B": "Wohnung durchsuchen"},
+        "optionen": {
+          "A": "Überwachungskameras untersuchen",
+          "B": "Wohnung durchsuchen"
+        },
+        "ergebnis": "B hat gewonnen (vom Auftraggeber mitgeteilt, ohne Stimmenzahlen)",
+        "gewinner": "B"
+      }
+    },
+    {
+      "nummer": 2,
+      "titel": "Die trockene Jacke",
+      "status": "Sprechertext fertig – wartet auf ElevenLabs-Audio; Hinweise gelten erst nach Freigabe/Produktion als Kanon",
+      "dateien": {
+        "sprechertext": "folge_02_elevenlabs.txt"
+      },
+      "ereignisse_geplant": [
+        "Die Ermittler durchsuchen Daniels Wohnung (Abstimmung Folge 1: B).",
+        "An der Garderobe hängt eine dunkle Jacke wie auf Kamera 01 – sie ist trocken, obwohl es die ganze Nacht geregnet hat.",
+        "Daniels Laptop steht zugeklappt auf dem Schreibtisch und ist passwortgesperrt.",
+        "Kommissarin Hartmann entdeckt hinter dem schief hängenden Wandbild eine versteckte Pinnwand.",
+        "Pinnwand: Fotos aller Überwachungskameras im Haus; ein drei Tage altes Kalenderblatt mit rot eingekreistem «23:47 Uhr».",
+        "An der Pinnwand hängt ein Schlüssel mit Anhänger «Keller, Raum 7»."
+      ],
+      "abstimmung": {
+        "frage": "Was untersuchen wir als Nächstes?",
+        "optionen": {
+          "A": "Daniels Laptop",
+          "B": "Kellerraum 7"
+        },
         "ergebnis": null,
         "gewinner": null
       }
@@ -86,11 +146,20 @@
     "Wohin fuhr der Aufzug, wohin ging der Mann am Haupteingang?",
     "Was ist an Daniels Wohnung «geheimnisvoll»?"
   ],
-  "abstimmungsergebnisse": [],
+  "abstimmungsergebnisse": [
+    {
+      "folge": 1,
+      "frage": "Was sollen wir zuerst untersuchen?",
+      "gewinner": "B",
+      "option": "Wohnung durchsuchen",
+      "stimmen": null
+    }
+  ],
   "kontinuitaetsregeln": [
     "Keine Auflösung erfinden, die bisherigen Hinweisen widerspricht.",
     "Noch NICHT festgelegt (bewusst offen): Ursache der Doppelaufnahme, Daniels Aufenthaltsort, Täter/Motiv.",
     "Rein visuelle Details aus Folge 1 (Etagenanzeige im Aufzug, Sicherungskette, Laptop, Uhrzeit-Zählung der Kameras) sind Dekor und noch keine offiziellen Hinweise – können aber später aufgegriffen werden.",
-    "Charaktere immer mit den in engine.py definierten Farben/Formen zeichnen."
+    "Charaktere immer mit den in engine.py definierten Farben/Formen zeichnen.",
+    "Folge 2 legt bewusst NICHT fest, ob die trockene Jacke dieselbe ist wie auf Kamera 01 (nur: sieht genauso aus) und was hinter dem Kalenderblatt steckt."
   ]
 }
